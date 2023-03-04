@@ -8,12 +8,12 @@ class Solution:
         front = None
         back = head
         count = 0
-        if head is None or head.next is None: return head
+        if head is None or head.next is None: return head #don't use one line 
         while back: 
             back = back.next
             count += 1
-        k, count, back = k%count, 0, head
-        if k == 0: return head
+        k, count, back = k%count, 0, head   #don't use one line 
+        if k == 0: return head   #don't use one line and give space between codos to make it clear to see
         while back.next:
             back = back.next
             count+= 1
@@ -27,3 +27,6 @@ class Solution:
         main = front.next
         front.next = None
         return main
+    
+    # it is good aproche but your code is a little bit mess try to make it clear 
+    # and good naming i like it 
